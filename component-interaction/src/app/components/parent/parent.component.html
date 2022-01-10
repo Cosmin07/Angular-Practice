@@ -1,0 +1,4 @@
+<h3>Parrent component</h3>
+<button (click)="sendMessage()">Sent new message</button>
+<app-child [message]="messageToChild" (evenOddSeconds)="onChildEvent($event)" #myChild></app-child>
+<p>Child says : {{ messageFromChild }}</p>
